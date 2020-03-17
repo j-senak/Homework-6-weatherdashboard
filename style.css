@@ -1,0 +1,29 @@
+.justify-content-center {
+    -ms-flex-pack: center!important;
+    justify-content: center!important;
+    background-color: rgb(52, 58, 64);
+    color: white;
+    font-size: xx-large;
+}
+
+body {
+    height: 100%;
+}
+
+.formContainer {
+    /* margin-top: 10px;
+    width: 100px;
+    background-color: lightgray;
+    height: 100%; */
+    float: left;
+    position: relative;
+    z-index: 2;
+    width: 350px;
+}
+
+.card-body {
+    float: left;
+    position: relative;
+    z-index: 2;
+    width: 350px;
+}
