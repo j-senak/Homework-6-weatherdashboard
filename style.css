@@ -1,0 +1,17 @@
+.justify-content-center {
+    -ms-flex-pack: center!important;
+    justify-content: center!important;
+    background-color: rgb(52, 58, 64);
+    color: white;
+    font-size: xx-large;
+}
+
+#city-input {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.city {
+    background-color: white;
+    height: 50px;
+}
