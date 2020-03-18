@@ -5,7 +5,7 @@ $(document).ready(function() {
     var cityCards = [];
 
 //Display cities typed
-function renderCityForm () {
+function renderCityButton () {
 
     // Make sure to delete re-entered cities
     $("#city-view").empty();
@@ -14,20 +14,20 @@ function renderCityForm () {
     for (var i = 0; i < cityCards.length; i++) {
 
         // Dynamically generate the city forms and prepend them to the list
-        var cityList = $("<form>");
-        cityForm.addClass("city");
-        cityForm.attr("data-name", cityCard[i]);
-        cityForm.text(cityCards[i]);
-        $("#city-view").prepend(cityForm);
+        var cityList = $("<button>");
+        cityList.addClass("city");
+        cityList.attr("data-name", cityCards[i]);
+        cityList.text(cityCards[i]);
+        $("#city-view").prepend(cityList);
     }
 } 
 
 // This function will take the user input to post
-$("#search-btn").on("click", function(event) {
+$("#submit-city").on("click", function(event) {
     event.preventDefault();
-    var cityInput = $("search").val().trim();
+    var cityInput = $("city-view").val("");
     cityCards.push(cityInput);
-    renderCityForm();
+    renderCityButton();
 
 });
 
